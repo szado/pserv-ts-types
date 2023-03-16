@@ -1,2 +1,2 @@
 # pserv-ts-types
-TypeScript types definitions for PServ APIs protocol.
+TypeScript type definitions for PServ APIs protocol.
