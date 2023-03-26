@@ -1,4 +1,4 @@
 export interface RoleDeleted {
-    roleId: string;
+    id: string;
     spaceId: string;
 }
