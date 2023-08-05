@@ -1,6 +1,6 @@
 import {SpaceMember} from "../SpaceMember";
 
-export interface SpaceMemberUpdate {
+export interface SpaceMemberUpdated {
     spaceId: string;
     member: SpaceMember;
 }

@@ -1,5 +1,6 @@
-import {Permission} from "../Permission";
-
 export interface Permissions {
-    permissions: Permission[];
+    permissions: number;
+    spaceId: string | null;
+    roomId: string | null;
+    topicId: string | null;
 }
