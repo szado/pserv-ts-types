@@ -1,6 +1,6 @@
 export interface Role {
     id: string;
-    order: number;
+    priorityF: number;
     name: string;
     color?: string;
 }

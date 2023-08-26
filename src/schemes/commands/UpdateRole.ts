@@ -1,7 +1,7 @@
 export interface UpdateRole {
     spaceId: string;
     id: string;
-    order?: number;
+    priority?: number;
     name?: string;
     color?: string;
 }
