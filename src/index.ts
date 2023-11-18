@@ -61,11 +61,16 @@ import {CreateTopic} from "./schemes/commands/CreateTopic";
 import {DeleteTopic} from "./schemes/commands/DeleteTopic";
 import {CreateMessage} from "./schemes/commands/CreateMessage";
 import {UpdateRole} from "./schemes/commands/UpdateRole";
+import {GetAckReports} from "./schemes/commands/GetAckReports";
+import {AckMessage} from "./schemes/commands/AckMessage";
+import {AckReports} from "./schemes/events/AckReports";
+import {AckReport} from "./schemes/AckReport";
 
 export {
     // objects
     Envelope,
     Message,
+    AckReport,
     Role,
     Room,
     RoomMember,
@@ -80,6 +85,7 @@ export {
     Bye,
     Error,
     NewMessage,
+    AckReports,
     NewRole,
     NewRoom,
     NewTopic,
@@ -108,6 +114,7 @@ export {
     // commands
     AssignRole,
     CreateMessage,
+    AckMessage,
     CreateRole,
     CreateRoom,
     CreateSpace,
@@ -124,6 +131,7 @@ export {
     GetSession,
     GetSpaceMembers,
     GetSpaceRooms,
+    GetAckReports,
     JoinRoom,
     JoinSpace,
     LeaveRoom,
