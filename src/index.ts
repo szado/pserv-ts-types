@@ -62,7 +62,7 @@ import {DeleteTopic} from "./schemes/commands/DeleteTopic";
 import {CreateMessage} from "./schemes/commands/CreateMessage";
 import {UpdateRole} from "./schemes/commands/UpdateRole";
 import {GetAckReports} from "./schemes/commands/GetAckReports";
-import {AckMessage} from "./schemes/commands/AckMessage";
+import {Ack} from "./schemes/commands/Ack";
 import {AckReports} from "./schemes/events/AckReports";
 import {AckReport} from "./schemes/AckReport";
 
@@ -114,7 +114,7 @@ export {
     // commands
     AssignRole,
     CreateMessage,
-    AckMessage,
+    Ack,
     CreateRole,
     CreateRoom,
     CreateSpace,
