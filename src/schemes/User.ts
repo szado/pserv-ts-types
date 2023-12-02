@@ -5,4 +5,5 @@ export interface User {
     nick: string;
     avatar: string;
     flags: UserFlag[];
+    online: boolean;
 }

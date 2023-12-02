@@ -1,6 +1,6 @@
 import {User} from "./User";
 
 export interface SpaceMember {
-    user: User;
+    user: User | null;
     roles: string[];
 }

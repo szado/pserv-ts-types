@@ -65,6 +65,7 @@ import {GetAckReports} from "./schemes/commands/GetAckReports";
 import {Ack} from "./schemes/commands/Ack";
 import {AckReports} from "./schemes/events/AckReports";
 import {AckReport} from "./schemes/AckReport";
+import {UserChanged} from "./schemes/events/UserChanged";
 
 export {
     // objects
@@ -101,6 +102,7 @@ export {
     RoomMemberLeft,
     RoomMembers,
     RoomMemberUpdated,
+    UserChanged,
     Session,
     SpaceDeleted,
     SpaceJoined,
