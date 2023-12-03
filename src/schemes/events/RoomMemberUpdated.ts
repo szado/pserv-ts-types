@@ -1,7 +1,7 @@
 import {RoomMember} from "../RoomMember";
 
 export interface RoomMemberUpdated {
-    roomId: string;u
+    roomId: string;
     userId: string;
     member: RoomMember;
 }
