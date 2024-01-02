@@ -1,6 +1,6 @@
 {
   "name": "pserv-ts-types",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "description": "TypeScript type definitions for PServ APIs protocol.",
   "author": "Jarosław Żak",
   "license": "MIT",

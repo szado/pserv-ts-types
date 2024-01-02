@@ -1,5 +1,5 @@
 import {User} from "../User";
 
-export interface UserChanged {
+export interface UserUpdated {
     user: User;
 }

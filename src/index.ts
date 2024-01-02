@@ -35,7 +35,7 @@ import {RoomDeleted} from "./schemes/events/RoomDeleted";
 import {NewTopic} from "./schemes/events/NewTopic";
 import {TopicDeleted} from "./schemes/events/TopicDeleted";
 import {NewMessage} from "./schemes/events/NewMessage";
-import {PermissionOverwritesChanged} from "./schemes/events/PermissionOverwritesChanged";
+import {PermissionOverwritesUpdated} from "./schemes/events/PermissionOverwritesUpdated";
 import {PermissionOverwrites} from "./schemes/events/PermissionOverwrites";
 import {GetSession} from "./schemes/commands/GetSession";
 import {GetComputedPermissions} from "./schemes/commands/GetComputedPermissions";
@@ -65,7 +65,11 @@ import {GetAckReports} from "./schemes/commands/GetAckReports";
 import {Ack} from "./schemes/commands/Ack";
 import {AckReports} from "./schemes/events/AckReports";
 import {AckReport} from "./schemes/AckReport";
-import {UserChanged} from "./schemes/events/UserChanged";
+import {UserUpdated} from "./schemes/events/UserUpdated";
+import {UpdateRoom} from "./schemes/commands/UpdateRoom";
+import {UpdateSpace} from "./schemes/commands/UpdateSpace";
+import {RoomUpdated} from "./schemes/events/RoomUpdated";
+import {SpaceUpdated} from "./schemes/events/SpaceUpdated";
 
 export {
     // objects
@@ -92,19 +96,21 @@ export {
     NewTopic,
     Permissions,
     PermissionOverwrites,
-    PermissionOverwritesChanged,
+    PermissionOverwritesUpdated,
     RoleDeleted,
     RoleUpdated,
     RoomDeleted,
+    RoomUpdated,
     RoomJoined,
     RoomLeft,
     RoomMemberJoined,
     RoomMemberLeft,
     RoomMembers,
     RoomMemberUpdated,
-    UserChanged,
+    UserUpdated,
     Session,
     SpaceDeleted,
+    SpaceUpdated,
     SpaceJoined,
     SpaceLeft,
     SpaceMemberJoined,
@@ -139,4 +145,6 @@ export {
     LeaveRoom,
     LeaveSpace,
     UpdateRole,
+    UpdateSpace,
+    UpdateRoom,
 };
