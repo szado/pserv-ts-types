@@ -70,6 +70,10 @@ import {UpdateRoom} from "./schemes/commands/UpdateRoom";
 import {UpdateSpace} from "./schemes/commands/UpdateSpace";
 import {RoomUpdated} from "./schemes/events/RoomUpdated";
 import {SpaceUpdated} from "./schemes/events/SpaceUpdated";
+import {ChatLayerCriteria} from "./schemes/ChatLayerCriteria";
+import {GetPermissionOverwriteTargets} from "./schemes/commands/GetPermissionOverwriteTargets";
+import {PermissionOverwriteTargetDetails} from "./schemes/PermissionOverwriteTargetDetails";
+import {PermissionOverwriteTargets} from "./schemes/commands/PermissionOverwriteTargets";
 
 export {
     // objects
@@ -86,6 +90,8 @@ export {
     User,
     UserState,
     PermissionOverwritesValue,
+    ChatLayerCriteria,
+    PermissionOverwriteTargetDetails,
     // events
     Bye,
     Error,
@@ -119,6 +125,7 @@ export {
     SpaceMemberUpdated,
     SpaceRooms,
     TopicDeleted,
+    PermissionOverwriteTargets,
     // commands
     AssignRole,
     CreateMessage,
@@ -147,4 +154,5 @@ export {
     UpdateRole,
     UpdateSpace,
     UpdateRoom,
+    GetPermissionOverwriteTargets,
 };
