@@ -73,6 +73,11 @@ import {SpaceUpdated} from "./schemes/events/SpaceUpdated";
 import {ChatLayerCriteria} from "./schemes/ChatLayerCriteria";
 import {GetPermissionOverwriteTargets} from "./schemes/commands/GetPermissionOverwriteTargets";
 import {PermissionOverwriteTargets} from "./schemes/events/PermissionOverwriteTargets";
+import { CreateOwner } from "./schemes/commands/CreateOwner";
+import { DeleteOwner } from "./schemes/commands/DeleteOwner";
+import { GetOwners } from "./schemes/commands/GetOwners";
+import { Owners } from "./schemes/events/Owners";
+import { Ok } from "./schemes/events/Ok";
 
 export {
     // objects
@@ -124,6 +129,8 @@ export {
     SpaceRooms,
     TopicDeleted,
     PermissionOverwriteTargets,
+    Owners,
+    Ok,
     // commands
     AssignRole,
     CreateMessage,
@@ -153,4 +160,7 @@ export {
     UpdateSpace,
     UpdateRoom,
     GetPermissionOverwriteTargets,
+    CreateOwner,
+    DeleteOwner,
+    GetOwners,
 };
