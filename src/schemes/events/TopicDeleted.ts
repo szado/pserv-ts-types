@@ -1,4 +1,5 @@
+import {ChatLocation} from "../ChatLocation";
+
 export interface TopicDeleted {
-    id: string;
-    roomId: string;
+    location: ChatLocation;
 }

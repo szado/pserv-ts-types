@@ -1,5 +1,5 @@
-import {ChatLayerCriteria} from "../ChatLayerCriteria";
+import {ChatLocation} from "../ChatLocation";
 
 export interface GetOwners {
-    layerCriteria: ChatLayerCriteria;
+    location: ChatLocation;
 }

@@ -1,6 +1,7 @@
+import {ChatLocation} from "../ChatLocation";
+
 export interface GetPermissionOverwrites {
-    layer: 'Global' | 'Space' | 'Room' | 'Topic';
-    layerId: string | null;
+    location: ChatLocation;
     target: 'User' | 'Role';
     targetId: string;
 }

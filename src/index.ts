@@ -13,7 +13,7 @@ import {UserState} from "./schemes/UserState";
 import {Bye} from "./schemes/events/Bye";
 import {Error} from "./schemes/events/Error";
 import {Session} from "./schemes/events/Session";
-import {Permissions} from "./schemes/events/Permissions";
+import {ComputedPermissions} from "./schemes/events/ComputedPermissions";
 import {SpaceJoined} from "./schemes/events/SpaceJoined";
 import {SpaceLeft} from "./schemes/events/SpaceLeft";
 import {SpaceMemberJoined} from "./schemes/events/SpaceMemberJoined";
@@ -70,7 +70,7 @@ import {UpdateRoom} from "./schemes/commands/UpdateRoom";
 import {UpdateSpace} from "./schemes/commands/UpdateSpace";
 import {RoomUpdated} from "./schemes/events/RoomUpdated";
 import {SpaceUpdated} from "./schemes/events/SpaceUpdated";
-import {ChatLayerCriteria} from "./schemes/ChatLayerCriteria";
+import {ChatLocation} from "./schemes/ChatLocation";
 import {GetPermissionOverwriteTargets} from "./schemes/commands/GetPermissionOverwriteTargets";
 import {PermissionOverwriteTargets} from "./schemes/events/PermissionOverwriteTargets";
 import { CreateOwner } from "./schemes/commands/CreateOwner";
@@ -94,7 +94,7 @@ export {
     User,
     UserState,
     PermissionOverwritesValue,
-    ChatLayerCriteria,
+    ChatLocation,
     // events
     Bye,
     Error,
@@ -103,7 +103,7 @@ export {
     NewRole,
     NewRoom,
     NewTopic,
-    Permissions,
+    ComputedPermissions,
     PermissionOverwrites,
     PermissionOverwritesUpdated,
     RoleDeleted,

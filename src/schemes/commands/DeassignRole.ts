@@ -1,6 +1,7 @@
+import {ChatLocation} from "../ChatLocation";
+
 export interface DeassignRole {
     roleId: string;
     userId: string;
-    layer: 'Space' | 'Room';
-    layerId: string;
+    location: ChatLocation;
 }

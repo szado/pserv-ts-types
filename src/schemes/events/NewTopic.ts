@@ -1,6 +1,7 @@
 import {Topic} from "../Topic";
+import {ChatLocation} from "../ChatLocation";
 
 export interface NewTopic {
-    roomId: string;
+    location: ChatLocation;
     topic: Topic;
 }

@@ -1,5 +1,14 @@
+import {ChatLocation} from "../ChatLocation";
+import {CreateMessage} from "./CreateMessage";
+
+export interface MessageReference {
+    topicId: string;
+    messageId: string;
+}
+
 export interface CreateTopic {
-    roomId: string;
+    location: ChatLocation;
     name: string;
-    description: string;
+    messageRef: MessageReference | null;
+    initialMessage: Omit<CreateMessage, 'location'> | null;
 }

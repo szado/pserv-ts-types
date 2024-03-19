@@ -1,5 +1,6 @@
 import {ChatLocation} from "../ChatLocation";
 
-export interface RoomDeleted {
+export interface ComputedPermissions {
+    permissions: number;
     location: ChatLocation;
 }

@@ -1,9 +1,9 @@
-import {ChatLayerCriteria} from "../ChatLayerCriteria";
+import {ChatLocation} from "../ChatLocation";
 import {RoomMember} from "../RoomMember";
 import {SpaceMember} from "../SpaceMember";
 
 export interface Owners {
-    layerCriteria: ChatLayerCriteria;
+    location: ChatLocation;
     spaceMembers: SpaceMember[] | null;
     roomMembers: RoomMember[] | null;
 }

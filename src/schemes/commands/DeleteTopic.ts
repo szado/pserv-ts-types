@@ -1,3 +1,5 @@
+import {ChatLocation} from "../ChatLocation";
+
 export interface DeleteTopic {
-    id: string;
+    location: ChatLocation;
 }

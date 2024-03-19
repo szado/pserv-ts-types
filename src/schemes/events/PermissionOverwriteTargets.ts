@@ -1,10 +1,10 @@
-import {ChatLayerCriteria} from "../ChatLayerCriteria";
+import {ChatLocation} from "../ChatLocation";
 import {SpaceMember} from "../SpaceMember";
 import {RoomMember} from "../RoomMember";
 import {Role} from "../Role";
 
 export interface PermissionOverwriteTargets {
-    layerCriteria: ChatLayerCriteria;
+    location: ChatLocation;
     spaceMembers: SpaceMember[] | null;
     roomMembers: RoomMember[] | null;
     roles: Role[] | null;

@@ -1,5 +1,5 @@
-import {ChatLayerCriteria} from "../ChatLayerCriteria";
+import {ChatLocation} from "../ChatLocation";
 
 export interface GetPermissionOverwriteTargets {
-    layerCriteria: ChatLayerCriteria;
+    location: ChatLocation;
 }

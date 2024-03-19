@@ -1,5 +1,6 @@
+import {ChatLocation} from "../ChatLocation";
+
 export interface Ack {
-    roomId: string;
-    topicId: string;
+    location: ChatLocation;
     messageId?: string;
 }

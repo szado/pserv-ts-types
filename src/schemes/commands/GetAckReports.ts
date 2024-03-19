@@ -1,4 +1,5 @@
+import {ChatLocation} from "../ChatLocation";
+
 export interface GetAckReports {
-    spaceId?: string | null;
-    roomId?: string | null;
+    location: ChatLocation;
 }

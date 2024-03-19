@@ -1,4 +1,4 @@
-export interface ChatLayerCriteria {
+export interface ChatLocation {
     spaceId?: string;
     roomId?: string;
     topicId?: string;

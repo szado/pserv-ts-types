@@ -1,4 +1,6 @@
+import {ChatLocation} from "../ChatLocation";
+
 export interface CreateMessage {
-    topicId: string;
+    location: ChatLocation;
     content: string;
 }
