@@ -78,6 +78,7 @@ import { DeleteOwner } from "./schemes/commands/DeleteOwner";
 import { GetOwners } from "./schemes/commands/GetOwners";
 import { Owners } from "./schemes/events/Owners";
 import { Ok } from "./schemes/events/Ok";
+import {RoomType} from "./schemes/Room";
 
 export {
     // objects
@@ -86,6 +87,7 @@ export {
     AckReport,
     Role,
     Room,
+    RoomType,
     RoomMember,
     RoomSummary,
     Space,

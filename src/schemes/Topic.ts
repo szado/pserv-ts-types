@@ -1,5 +1,10 @@
+import {MessageReference} from "./commands/CreateTopic";
+import {Message} from "./Message";
+
 export interface Topic {
     id: string;
     name: string;
-    description: string;
+    messageCount: number;
+    messageRef?: MessageReference;
+    lastMessage?: Message;
 }
