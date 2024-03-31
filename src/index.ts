@@ -79,6 +79,7 @@ import { GetOwners } from "./schemes/commands/GetOwners";
 import { Owners } from "./schemes/events/Owners";
 import { Ok } from "./schemes/events/Ok";
 import {RoomType} from "./schemes/Room";
+import {MessageReference} from "./schemes/commands/CreateTopic";
 
 export {
     // objects
@@ -97,6 +98,7 @@ export {
     UserState,
     PermissionOverwritesValue,
     ChatLocation,
+    MessageReference,
     // events
     Bye,
     Error,
