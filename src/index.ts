@@ -61,10 +61,7 @@ import {CreateTopic} from "./schemes/commands/CreateTopic";
 import {DeleteTopic} from "./schemes/commands/DeleteTopic";
 import {CreateMessage} from "./schemes/commands/CreateMessage";
 import {UpdateRole} from "./schemes/commands/UpdateRole";
-import {GetAckReports} from "./schemes/commands/GetAckReports";
 import {Ack} from "./schemes/commands/Ack";
-import {AckReports} from "./schemes/events/AckReports";
-import {AckReport} from "./schemes/AckReport";
 import {UserUpdated} from "./schemes/events/UserUpdated";
 import {UpdateRoom} from "./schemes/commands/UpdateRoom";
 import {UpdateSpace} from "./schemes/commands/UpdateSpace";
@@ -80,12 +77,18 @@ import { Owners } from "./schemes/events/Owners";
 import { Ok } from "./schemes/events/Ok";
 import {RoomType} from "./schemes/Room";
 import {MessageReference} from "./schemes/commands/CreateTopic";
+import {FollowTopic} from "./schemes/commands/FollowTopic";
+import {FollowedTopics} from "./schemes/events/FollowedTopics";
+import {FollowedTopic} from "./schemes/FollowedTopic";
+import {UnfollowTopic} from "./schemes/commands/UnfollowTopic";
+import {TopicUnfollowed} from "./schemes/events/TopicUnfollowed";
+import {TopicFollowed} from "./schemes/events/TopicFollowed";
+import {GetFollowedTopics} from "./schemes/commands/GetFollowedTopics";
 
 export {
     // objects
     Envelope,
     Message,
-    AckReport,
     Role,
     Room,
     RoomType,
@@ -94,6 +97,7 @@ export {
     Space,
     SpaceMember,
     Topic,
+    FollowedTopic,
     User,
     UserState,
     PermissionOverwritesValue,
@@ -103,10 +107,12 @@ export {
     Bye,
     Error,
     NewMessage,
-    AckReports,
     NewRole,
     NewRoom,
     NewTopic,
+    TopicFollowed,
+    TopicUnfollowed,
+    FollowedTopics,
     ComputedPermissions,
     PermissionOverwrites,
     PermissionOverwritesUpdated,
@@ -143,6 +149,9 @@ export {
     CreateRoom,
     CreateSpace,
     CreateTopic,
+    FollowTopic,
+    UnfollowTopic,
+    GetFollowedTopics,
     DeassignRole,
     DeleteRole,
     DeleteRoom,
@@ -155,7 +164,6 @@ export {
     GetSession,
     GetSpaceMembers,
     GetSpaceRooms,
-    GetAckReports,
     JoinRoom,
     JoinSpace,
     LeaveRoom,

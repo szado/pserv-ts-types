@@ -1,5 +1,5 @@
 import {ChatLocation} from "../ChatLocation";
 
-export interface GetAckReports {
+export interface FollowTopic {
     location: ChatLocation;
 }
