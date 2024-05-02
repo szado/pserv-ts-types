@@ -84,6 +84,7 @@ import {UnfollowTopic} from "./schemes/commands/UnfollowTopic";
 import {TopicUnfollowed} from "./schemes/events/TopicUnfollowed";
 import {TopicFollowed} from "./schemes/events/TopicFollowed";
 import {GetFollowedTopics} from "./schemes/commands/GetFollowedTopics";
+import {FollowedTopicUpdated} from "./schemes/events/FollowedTopicUpdated";
 
 export {
     // objects
@@ -113,6 +114,7 @@ export {
     TopicFollowed,
     TopicUnfollowed,
     FollowedTopics,
+    FollowedTopicUpdated,
     ComputedPermissions,
     PermissionOverwrites,
     PermissionOverwritesUpdated,
