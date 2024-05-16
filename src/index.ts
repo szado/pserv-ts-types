@@ -1,5 +1,5 @@
 import {Envelope} from "./schemes/Envelope";
-import {Message} from "./schemes/Message";
+import {Message, MessageType} from "./schemes/Message";
 import {PermissionOverwritesValue} from "./schemes/PermissionOverwritesValue";
 import {Role} from "./schemes/Role";
 import {Room} from "./schemes/Room";
@@ -85,11 +85,14 @@ import {TopicUnfollowed} from "./schemes/events/TopicUnfollowed";
 import {TopicFollowed} from "./schemes/events/TopicFollowed";
 import {GetFollowedTopics} from "./schemes/commands/GetFollowedTopics";
 import {FollowedTopicUpdated} from "./schemes/events/FollowedTopicUpdated";
+import {GetMessages} from "./schemes/commands/GetMessages";
+import {Messages} from "./schemes/events/Messages";
 
 export {
     // objects
     Envelope,
     Message,
+    MessageType,
     Role,
     Room,
     RoomType,
@@ -107,6 +110,7 @@ export {
     // events
     Bye,
     Error,
+    Messages,
     NewMessage,
     NewRole,
     NewRoom,
@@ -145,6 +149,7 @@ export {
     Ok,
     // commands
     AssignRole,
+    GetMessages,
     CreateMessage,
     Ack,
     CreateRole,
