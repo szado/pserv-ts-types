@@ -87,6 +87,8 @@ import {GetFollowedTopics} from "./schemes/commands/GetFollowedTopics";
 import {FollowedTopicUpdated} from "./schemes/events/FollowedTopicUpdated";
 import {GetMessages} from "./schemes/commands/GetMessages";
 import {Messages} from "./schemes/events/Messages";
+import {Topics} from "./schemes/events/Topics";
+import {GetTopics} from "./schemes/commands/GetTopics";
 
 export {
     // objects
@@ -182,4 +184,6 @@ export {
     CreateOwner,
     DeleteOwner,
     GetOwners,
+    Topics,
+    GetTopics,
 };
