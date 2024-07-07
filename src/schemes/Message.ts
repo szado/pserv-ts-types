@@ -13,4 +13,5 @@ export interface Message {
     user: User;
     content?: string;
     topicRef: string | null;
+    attachments: string[] | null;
 }
