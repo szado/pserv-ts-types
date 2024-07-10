@@ -2,7 +2,7 @@ import {Envelope} from "./schemes/Envelope";
 import {Message, MessageType} from "./schemes/Message";
 import {PermissionOverwritesValue} from "./schemes/PermissionOverwritesValue";
 import {Role} from "./schemes/Role";
-import {Room} from "./schemes/Room";
+import {Room, RoomType, RoomFlag} from "./schemes/Room";
 import {RoomMember} from "./schemes/RoomMember";
 import {RoomSummary} from "./schemes/RoomSummary";
 import {Space} from "./schemes/Space";
@@ -75,7 +75,6 @@ import { DeleteOwner } from "./schemes/commands/DeleteOwner";
 import { GetOwners } from "./schemes/commands/GetOwners";
 import { Owners } from "./schemes/events/Owners";
 import { Ok } from "./schemes/events/Ok";
-import {RoomType} from "./schemes/Room";
 import {MessageReference} from "./schemes/commands/CreateTopic";
 import {FollowTopic} from "./schemes/commands/FollowTopic";
 import {FollowedTopics} from "./schemes/events/FollowedTopics";
@@ -97,6 +96,7 @@ export {
     MessageType,
     Role,
     Room,
+    RoomFlag,
     RoomType,
     RoomMember,
     RoomSummary,

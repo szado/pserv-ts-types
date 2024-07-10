@@ -3,6 +3,10 @@ import {User} from "./User";
 
 export type RoomType = 'Text' | 'Pm';
 
+export enum RoomFlag {
+    AllowSystemMessages = 1 << 0,
+}
+
 export interface Room {
     id: string;
     spaceId: string | null;
@@ -11,4 +15,5 @@ export interface Room {
     type: RoomType;
     defaultTopic: Topic | null;
     recipients: User[] | null;
+    flags: number;
 }
