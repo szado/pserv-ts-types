@@ -1,15 +1,11 @@
 import {User} from "./User";
+import {ChatLocation} from "./ChatLocation";
 
-export enum MessageType {
-    Text = 'Text',
-    RoomJoin = 'RoomJoin',
-    RoomLeave = 'RoomLeave',
-    SpaceJoin = 'SpaceJoin',
-    SpaceLeave = 'SpaceLeave',
-}
+export type MessageType = 'Text'|'RoomJoin'|'RoomLeave'|'SpaceJoin'|'SpaceLeave';
 
 export interface Message {
     id: string;
+    location: ChatLocation;
     createdAt: string;
     type: MessageType;
     user: User;

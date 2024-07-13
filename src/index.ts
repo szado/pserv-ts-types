@@ -75,7 +75,6 @@ import { DeleteOwner } from "./schemes/commands/DeleteOwner";
 import { GetOwners } from "./schemes/commands/GetOwners";
 import { Owners } from "./schemes/events/Owners";
 import { Ok } from "./schemes/events/Ok";
-import {MessageReference} from "./schemes/commands/CreateTopic";
 import {FollowTopic} from "./schemes/commands/FollowTopic";
 import {FollowedTopics} from "./schemes/events/FollowedTopics";
 import {FollowedTopic} from "./schemes/FollowedTopic";
@@ -108,7 +107,6 @@ export {
     UserState,
     PermissionOverwritesValue,
     ChatLocation,
-    MessageReference,
     // events
     Bye,
     Error,

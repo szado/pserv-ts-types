@@ -1,6 +1,5 @@
-import {RoomSummary} from "../RoomSummary";
+import {Room} from "../Room";
 
 export interface NewRoom {
-    summary: RoomSummary;
-    spaceId: string;
+    room: Room;
 }
