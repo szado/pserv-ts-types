@@ -5,4 +5,5 @@ export interface Space {
     name: string;
     roles: Role[];
     systemRoom: string | null;
+    defaultRooms: string[];
 }
