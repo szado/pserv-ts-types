@@ -87,6 +87,8 @@ import {GetMessages} from "./schemes/commands/GetMessages";
 import {Messages} from "./schemes/events/Messages";
 import {Topics} from "./schemes/events/Topics";
 import {GetTopics} from "./schemes/commands/GetTopics";
+import {UpdateTopic} from "./schemes/commands/UpdateTopic";
+import {TopicUpdated} from "./schemes/events/TopicUpdated";
 
 export {
     // objects
@@ -144,6 +146,7 @@ export {
     SpaceMemberUpdated,
     SpaceRooms,
     TopicDeleted,
+    TopicUpdated,
     PermissionOverwriteTargets,
     Owners,
     Ok,
@@ -178,6 +181,7 @@ export {
     UpdateRole,
     UpdateSpace,
     UpdateRoom,
+    UpdateTopic,
     GetPermissionOverwriteTargets,
     CreateOwner,
     DeleteOwner,
