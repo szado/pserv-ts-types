@@ -5,7 +5,7 @@ import {Role} from "./schemes/Role";
 import {Room, RoomType, RoomFlag} from "./schemes/Room";
 import {RoomMember} from "./schemes/RoomMember";
 import {RoomSummary} from "./schemes/RoomSummary";
-import {Space} from "./schemes/Space";
+import {Space, SpaceDiscoverable} from "./schemes/Space";
 import {SpaceMember} from "./schemes/SpaceMember";
 import {Topic} from "./schemes/Topic";
 import {User} from "./schemes/User";
@@ -89,6 +89,9 @@ import {Topics} from "./schemes/events/Topics";
 import {GetTopics} from "./schemes/commands/GetTopics";
 import {UpdateTopic} from "./schemes/commands/UpdateTopic";
 import {TopicUpdated} from "./schemes/events/TopicUpdated";
+import {GetDiscoverableSpaces} from "./schemes/commands/GetDiscoverableSpaces";
+import {DiscoverableSpaces} from "./schemes/events/DiscoverableSpaces";
+import {SpaceSummary} from "./schemes/SpaceSummary";
 
 export {
     // objects
@@ -109,6 +112,8 @@ export {
     UserState,
     PermissionOverwritesValue,
     ChatLocation,
+    SpaceSummary,
+    SpaceDiscoverable,
     // events
     Bye,
     Error,
@@ -150,6 +155,7 @@ export {
     PermissionOverwriteTargets,
     Owners,
     Ok,
+    DiscoverableSpaces,
     // commands
     AssignRole,
     GetMessages,
@@ -188,4 +194,5 @@ export {
     GetOwners,
     Topics,
     GetTopics,
+    GetDiscoverableSpaces,
 };
