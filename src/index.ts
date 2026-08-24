@@ -145,14 +145,14 @@ import {Uninvite} from "./schemes/commands/Uninvite";
 import {GetInvited} from "./schemes/commands/GetInvited";
 import {Invited} from "./schemes/events/Invited";
 import {TopicUnfollowed} from "./schemes/events/TopicUnfollowed";
-import {MessageReaction, ReactedUser, ReactionType, ToggledReaction, UserReaction} from "./schemes/Reaction";
+import {MessageReaction, ReactionType, ToggledReaction, UserReaction} from "./schemes/Reaction";
 import {MessagePoll, MessagePollOption} from "./schemes/MessagePoll";
 import {React} from "./schemes/commands/React";
 import {Unreact} from "./schemes/commands/Unreact";
-import {GetMessageReactionDetails} from "./schemes/commands/GetMessageReactionDetails";
-import {MessageReactionChanged} from "./schemes/events/MessageReactionChanged";
-import {ReactionToggled} from "./schemes/events/ReactionToggled";
-import {MessageReactionDetails} from "./schemes/events/MessageReactionDetails";
+import {GetReactionDetails} from "./schemes/commands/GetReactionDetails";
+import {ReactionUpdated} from "./schemes/events/ReactionUpdated";
+import {Reacted} from "./schemes/events/Reacted";
+import {ReactionDetails} from "./schemes/events/ReactionDetails";
 
 export {
     // objects
@@ -199,7 +199,6 @@ export {
     MessageReaction,
     UserReaction,
     ToggledReaction,
-    ReactedUser,
     MessagePoll,
     MessagePollOption,
     // events
@@ -259,9 +258,9 @@ export {
     MessagesRedacted,
     UserInfo,
     Invited,
-    MessageReactionChanged,
-    ReactionToggled,
-    MessageReactionDetails,
+    ReactionUpdated,
+    Reacted,
+    ReactionDetails,
     // commands
     AssignRole,
     GetMessages,
@@ -331,5 +330,5 @@ export {
     GetInvited,
     React,
     Unreact,
-    GetMessageReactionDetails,
+    GetReactionDetails,
 };

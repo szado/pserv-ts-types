@@ -1,4 +1,4 @@
-export type ReactionType = 'emoji' | 'emoticon';
+export type ReactionType = 'Emoji' | 'Emoticon';
 
 /**
  * Globally aggregated counter of a single reaction on a message. A `count` of 0
@@ -20,9 +20,4 @@ export interface UserReaction {
 
 export interface ToggledReaction extends UserReaction {
     isAdded: boolean;
-}
-
-export interface ReactedUser {
-    id: string;
-    nick: string;
 }

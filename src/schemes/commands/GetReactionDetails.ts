@@ -1,6 +1,6 @@
 import {ReactionType} from "../Reaction";
 
-export interface GetMessageReactionDetails {
+export interface GetReactionDetails {
     messageId: string;
     type: ReactionType;
     value: string;
