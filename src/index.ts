@@ -145,6 +145,14 @@ import {Uninvite} from "./schemes/commands/Uninvite";
 import {GetInvited} from "./schemes/commands/GetInvited";
 import {Invited} from "./schemes/events/Invited";
 import {TopicUnfollowed} from "./schemes/events/TopicUnfollowed";
+import {MessageReaction, ReactedUser, ReactionType, ToggledReaction, UserReaction} from "./schemes/Reaction";
+import {MessagePoll, MessagePollOption} from "./schemes/MessagePoll";
+import {React} from "./schemes/commands/React";
+import {Unreact} from "./schemes/commands/Unreact";
+import {GetMessageReactionDetails} from "./schemes/commands/GetMessageReactionDetails";
+import {MessageReactionChanged} from "./schemes/events/MessageReactionChanged";
+import {ReactionToggled} from "./schemes/events/ReactionToggled";
+import {MessageReactionDetails} from "./schemes/events/MessageReactionDetails";
 
 export {
     // objects
@@ -187,6 +195,13 @@ export {
     SessionPlatform,
     UserData,
     PrivateMessagePolicy,
+    ReactionType,
+    MessageReaction,
+    UserReaction,
+    ToggledReaction,
+    ReactedUser,
+    MessagePoll,
+    MessagePollOption,
     // events
     Bye,
     Error,
@@ -244,6 +259,9 @@ export {
     MessagesRedacted,
     UserInfo,
     Invited,
+    MessageReactionChanged,
+    ReactionToggled,
+    MessageReactionDetails,
     // commands
     AssignRole,
     GetMessages,
@@ -311,4 +329,7 @@ export {
     Invite,
     Uninvite,
     GetInvited,
+    React,
+    Unreact,
+    GetMessageReactionDetails,
 };
