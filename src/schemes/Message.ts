@@ -20,10 +20,6 @@ export interface Message {
     content?: string;
     topicRef: string | null;
     attachments: string[] | null;
-    /**
-     * Global counters only - what the asking user voted for comes separately as
-     * `myReactions`, so the history stays identical for everybody.
-     */
     reactions: MessageReaction[];
     poll?: MessagePoll;
 }
