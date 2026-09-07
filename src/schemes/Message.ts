@@ -32,5 +32,5 @@ export interface Message {
     attachments: string[] | null;
     reactions: MessageReaction[];
     poll?: MessagePoll;
-    mentions?: MessageMentions | null;
+    mentions: MessageMentions | null;
 }
