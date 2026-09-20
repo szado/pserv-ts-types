@@ -153,6 +153,19 @@ import {GetReactionDetails} from "./schemes/commands/GetReactionDetails";
 import {ReactionUpdated} from "./schemes/events/ReactionUpdated";
 import {Reacted} from "./schemes/events/Reacted";
 import {ReactionDetails} from "./schemes/events/ReactionDetails";
+import {
+    EntitlementsMap,
+    EntitlementsSubject,
+    EntitlementTarget,
+    EntitlementValue,
+    NO_LIMIT,
+    SpaceFeature,
+    UserFeature,
+} from "./schemes/Entitlements";
+import {GetEntitlements} from "./schemes/commands/GetEntitlements";
+import {Entitlements} from "./schemes/events/Entitlements";
+import {CreateAccessTicket, TicketAudience} from "./schemes/commands/CreateAccessTicket";
+import {AccessTicket} from "./schemes/events/AccessTicket";
 
 export {
     // objects
@@ -203,6 +216,14 @@ export {
     ToggledReaction,
     MessagePoll,
     MessagePollOption,
+    EntitlementTarget,
+    EntitlementsSubject,
+    EntitlementValue,
+    EntitlementsMap,
+    NO_LIMIT,
+    SpaceFeature,
+    UserFeature,
+    TicketAudience,
     // events
     Bye,
     Error,
@@ -263,6 +284,8 @@ export {
     ReactionUpdated,
     Reacted,
     ReactionDetails,
+    Entitlements,
+    AccessTicket,
     // commands
     AssignRole,
     GetMessages,
@@ -333,4 +356,6 @@ export {
     React,
     Unreact,
     GetReactionDetails,
+    GetEntitlements,
+    CreateAccessTicket,
 };
