@@ -90,8 +90,6 @@ export enum SearchRange {
 }
 
 /**
- * `space.storage.limit` is stated in gigabytes; every other storage key is in megabytes.
+ * Every storage entitlement is stated in megabytes.
  */
-export const SPACE_STORAGE_LIMIT_UNIT_BYTES = 1024 * 1024 * 1024;
-
 export const STORAGE_UNIT_BYTES = 1024 * 1024;
