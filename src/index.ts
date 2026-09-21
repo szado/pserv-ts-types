@@ -154,16 +154,22 @@ import {ReactionUpdated} from "./schemes/events/ReactionUpdated";
 import {Reacted} from "./schemes/events/Reacted";
 import {ReactionDetails} from "./schemes/events/ReactionDetails";
 import {
+    EntitlementsExtras,
     EntitlementsMap,
     EntitlementsSubject,
     EntitlementTarget,
     EntitlementValue,
+    HistoryRotation,
     NO_LIMIT,
+    SearchRange,
+    SPACE_STORAGE_LIMIT_UNIT_BYTES,
     SpaceFeature,
+    STORAGE_UNIT_BYTES,
     UserFeature,
 } from "./schemes/Entitlements";
 import {GetEntitlements} from "./schemes/commands/GetEntitlements";
 import {Entitlements} from "./schemes/events/Entitlements";
+import {EntitlementUsage} from "./schemes/events/EntitlementUsage";
 import {CreateAccessTicket, TicketAudience} from "./schemes/commands/CreateAccessTicket";
 import {AccessTicket} from "./schemes/events/AccessTicket";
 
@@ -220,9 +226,14 @@ export {
     EntitlementsSubject,
     EntitlementValue,
     EntitlementsMap,
+    EntitlementsExtras,
     NO_LIMIT,
+    SPACE_STORAGE_LIMIT_UNIT_BYTES,
+    STORAGE_UNIT_BYTES,
     SpaceFeature,
     UserFeature,
+    HistoryRotation,
+    SearchRange,
     TicketAudience,
     // events
     Bye,
@@ -285,6 +296,7 @@ export {
     Reacted,
     ReactionDetails,
     Entitlements,
+    EntitlementUsage,
     AccessTicket,
     // commands
     AssignRole,
