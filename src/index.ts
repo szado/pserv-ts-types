@@ -164,6 +164,7 @@ import {
     SearchRange,
     SpaceFeature,
     STORAGE_UNIT_BYTES,
+    UiPurpose,
     UserFeature,
 } from "./schemes/Entitlements";
 import {GetEntitlements} from "./schemes/commands/GetEntitlements";
@@ -232,6 +233,7 @@ export {
     UserFeature,
     HistoryRotation,
     SearchRange,
+    UiPurpose,
     TicketAudience,
     // events
     Bye,
