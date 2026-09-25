@@ -2,6 +2,12 @@ import {Role} from "./Role";
 
 export type SpaceDiscoverable = 'NotRequested' | 'Requested' | 'Accepted' | 'Declined';
 
+export enum SpaceIntent {
+    Community = 'community',
+    Friends = 'friends',
+    Team = 'team',
+}
+
 export interface Space {
     id: string;
     name: string;
@@ -13,4 +19,5 @@ export interface Space {
     banner: string | null;
     discoverable: SpaceDiscoverable;
     flags: number;
+    intent: SpaceIntent | null;
 }

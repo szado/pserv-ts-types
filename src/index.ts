@@ -5,7 +5,7 @@ import {Role, RoleFlag} from "./schemes/Role";
 import {Room, RoomType} from "./schemes/Room";
 import {RoomMember} from "./schemes/RoomMember";
 import {RoomSummary, RoomSummaryExtras} from "./schemes/RoomSummary";
-import {Space, SpaceDiscoverable} from "./schemes/Space";
+import {Space, SpaceDiscoverable, SpaceIntent} from "./schemes/Space";
 import {SpaceMember} from "./schemes/SpaceMember";
 import {Topic} from "./schemes/Topic";
 import {User, UserStatus} from "./schemes/User";
@@ -234,6 +234,7 @@ export {
     HistoryRotation,
     SearchRange,
     UiPurpose,
+    SpaceIntent,
     TicketAudience,
     // events
     Bye,
