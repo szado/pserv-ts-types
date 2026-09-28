@@ -19,5 +19,4 @@ export interface Space {
     banner: string | null;
     discoverable: SpaceDiscoverable;
     flags: number;
-    intent: SpaceIntent | null;
 }
